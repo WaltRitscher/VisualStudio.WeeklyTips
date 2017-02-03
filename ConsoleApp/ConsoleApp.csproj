@@ -7,8 +7,8 @@
     <ProjectGuid>{7F6E3C34-2327-4371-B273-81C73F6B43FD}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsoleApp</RootNamespace>
-    <AssemblyName>ConsoleApp</AssemblyName>
+    <RootNamespace>WeeklyTips.ConsoleApp</RootNamespace>
+    <AssemblyName>WeeklyTips.ConsoleApp</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
