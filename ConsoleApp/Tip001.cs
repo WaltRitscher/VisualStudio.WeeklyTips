@@ -11,11 +11,7 @@ namespace WeeklyTips.ConsoleApp {
 		// Change default colors for braces
 
 		public void Demo() {
-
-			// comment
-			// another comment
-
-
+			
 			var wholesaleCost = 45.89M;
 
 			Console.WriteLine(wholesaleCost);
