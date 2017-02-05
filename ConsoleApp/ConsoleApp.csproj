@@ -48,6 +48,7 @@
     <Compile Include="Tip001.cs" />
     <Compile Include="Tip002.cs" />
     <Compile Include="Tip003.cs" />
+    <Compile Include="Tip004.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
