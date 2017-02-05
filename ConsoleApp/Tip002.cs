@@ -9,7 +9,9 @@ namespace WeeklyTips.ConsoleApp {
 
 		public void Demo() {
 			// box selection 
+			var oddNumbers = new int[1, 3, 5, 7, 9];
+			var evenNumbers = new List<int>();
 
 		}
-		}
+	}
 }
