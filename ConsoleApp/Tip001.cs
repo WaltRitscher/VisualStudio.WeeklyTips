@@ -37,5 +37,5 @@ namespace WeeklyTips.ConsoleApp {
 // From the LinkedIn Learning / Lynda.com course
 // Visual Studio Weekly Tips.
 //
-//	See more Visual Studio Courses at https://lynda.com/waltritscher
-//  twitter: @waltritscher
+//	See more Visual Studio Courses at https=//lynda.com/waltritscher
+//  twitter= @waltritscher

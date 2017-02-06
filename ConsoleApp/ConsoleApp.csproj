@@ -49,9 +49,14 @@
     <Compile Include="Tip002.cs" />
     <Compile Include="Tip003.cs" />
     <Compile Include="Tip004.cs" />
+    <Compile Include="Tour.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="TipsData.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Tip002.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
