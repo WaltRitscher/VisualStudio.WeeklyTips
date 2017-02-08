@@ -2,8 +2,19 @@
 	"Employees": [
 		{
 			"FirstName": "Tadd",
-			"LastName": "Pouhl"
-		},
+			"LastName": "Pouhl",
+			"Tours": [
+				{
+					"TourName": "Buckingham Fountain",
+					"TimeOfDay": "Morning"
+				},
+				{
+					"TourName": "Lunch at Zekki's",
+					"TimeOfDay": "Noon"
+				}
+
+			]
+			},
 		{
 			"FirstName": "Terry",
 			"LastName": "Dactill"
