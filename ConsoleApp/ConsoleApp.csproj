@@ -55,6 +55,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="JsonFiles\employee.json" />
+    <None Include="JsonFiles\tourstop.json" />
     <None Include="TipsData.xlsx" />
   </ItemGroup>
   <ItemGroup>

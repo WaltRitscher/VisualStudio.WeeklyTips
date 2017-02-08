@@ -1,16 +1,16 @@
 ﻿{
-	"employees": [
+	"Employees": [
 		{
-			"firstName": "John",
-			"lastName": "Doe"
+			"FirstName": "Tadd",
+			"LastName": "Pouhl"
 		},
 		{
-			"firstName": "Anna",
-			"lastName": "Smith"
+			"FirstName": "Terry",
+			"LastName": "Dactill"
 		},
 		{
-			"firstName": "Peter",
-			"lastName": "Jones "
+			"FirstName": "Nancy",
+			"LastName": "Davolio "
 		}
 	]
 }
