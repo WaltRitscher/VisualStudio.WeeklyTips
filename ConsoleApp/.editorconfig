@@ -1,0 +1,11 @@
+﻿;Top-most EditorConfig file.
+
+root = true
+
+; Tab Indent
+[*.cs]
+indent_style = Tab
+
+indent_size = 6
+
+tab_width = 6
