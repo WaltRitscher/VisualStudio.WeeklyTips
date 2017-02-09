@@ -45,20 +45,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tip003.cs" />
-    <Compile Include="Tip004.cs" />
-    <Compile Include="Tip005.cs" />
-    <Compile Include="Tour.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />
     <None Include="App.config" />
     <None Include="JsonFiles\employee.json" />
     <None Include="JsonFiles\tourstop.json" />
-    <None Include="TipsData.xlsx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Tip002.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="XmlFiles\" />
