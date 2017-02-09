@@ -45,8 +45,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tip001.cs" />
-    <Compile Include="Tip002.cs" />
     <Compile Include="Tip003.cs" />
     <Compile Include="Tip004.cs" />
     <Compile Include="Tip005.cs" />
