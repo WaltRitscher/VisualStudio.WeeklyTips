@@ -10,9 +10,7 @@ namespace WeeklyTips.ConsoleApp {
 
 			// Run the example from the main method.
 
-			var tip = new Tip003();
-			tip.RunDemo_MoveCode();
-			Console.ReadLine();
+
 		}
 	}
 }

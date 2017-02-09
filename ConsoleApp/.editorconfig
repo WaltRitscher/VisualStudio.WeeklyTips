@@ -3,9 +3,10 @@
 root = true
 
 ; Tab Indent
+# file extension
 [*.cs]
-indent_style = Tab
+indent_style = space
 
-indent_size = 6
+indent_size = 2
 
-tab_width = 6
+tab_width = 2
