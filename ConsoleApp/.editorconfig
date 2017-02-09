@@ -1,11 +1,17 @@
-﻿;Top-most EditorConfig file.
+﻿root = true
 
-root = true
-
-; Tab Indent
+# file extension
 [*.cs]
-indent_style = Tab
+indent_style = tab
 
-indent_size = 6
+indent_size = 2  
 
-tab_width = 6
+tab_width = 2 
+
+# end_of_line
+
+# charset
+
+# trim_trailing_whitespace
+
+# insert_final_newline
