@@ -8,7 +8,13 @@ namespace WeeklyTips.ConsoleApp {
 	class CodeExample {
 
 		public void DoWork() {
-			// write the example code here...
+			Console.WriteLine("A");
+			Console.WriteLine("long");
+			Console.WriteLine("block");
+			Console.WriteLine("of");
+			Console.WriteLine("C#");
+			Console.WriteLine("Code");
+
 		}
 	}
 }
