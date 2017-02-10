@@ -8,6 +8,8 @@ namespace WeeklyTips.ConsoleApp {
 	class CodeExample {
 
 		public void DoWork() {
+
+
 			Console.WriteLine("A");
 			Console.WriteLine("long");
 			Console.WriteLine("block");
