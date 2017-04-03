@@ -27,12 +27,27 @@
             <ColumnDefinition Width="1*" />
             <ColumnDefinition Width="1*" />
         </Grid.ColumnDefinitions>
-        <Border  >
+        <Border>
             <Image Source="PatternedBackground.jpg" />
         </Border>
 
-        <Border Grid.Column="1" CornerRadius="42" >
-            <Image Source="PatternedBackground.jpg" />
+
+        <Border Grid.Column="1"
+                CornerRadius="42">
+            <Grid>
+                <Border Name="mask"
+                        Background="White"
+                        CornerRadius="42"
+                        Style="{x:Null}" />
+
+                <Image Source="PatternedBackground.jpg">
+                    <Image.OpacityMask>
+                        <VisualBrush Visual="{Binding ElementName=mask}" />
+                    </Image.OpacityMask>
+                </Image>
+
+            </Grid>
+
         </Border>
     </Grid>
 </Window>
