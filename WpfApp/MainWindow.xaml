@@ -3,14 +3,36 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-				xmlns:local="clr-namespace:WeeklyTips.WpfApp"
+        xmlns:local="clr-namespace:WeeklyTips.WpfApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow"
+        Height="350"
+        Width="525">
+    <Window.Resources>
+        <Style TargetType="Border">
+            <Setter Property="BorderBrush"
+                    Value="#FFF04346" />
+            <Setter Property="BorderThickness"
+                    Value="5" />
+            <Setter Property="HorizontalAlignment"
+                    Value="Center" />
+            <Setter Property="VerticalAlignment"
+                    Value="Center" />
+            <Setter Property="Margin"
+                    Value="6,12" />
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*" />
             <ColumnDefinition Width="1*" />
         </Grid.ColumnDefinitions>
-            <Border
+        <Border  >
+            <Image Source="PatternedBackground.jpg" />
+        </Border>
+
+        <Border Grid.Column="1" CornerRadius="42" >
+            <Image Source="PatternedBackground.jpg" />
+        </Border>
     </Grid>
 </Window>
