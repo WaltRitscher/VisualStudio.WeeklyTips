@@ -8,46 +8,61 @@
         Title="MainWindow"
         Height="350"
         Width="525">
-    <Window.Resources>
-        <Style TargetType="Border">
-            <Setter Property="BorderBrush"
-                    Value="#FFF04346" />
-            <Setter Property="BorderThickness"
-                    Value="5" />
-            <Setter Property="HorizontalAlignment"
-                    Value="Center" />
-            <Setter Property="VerticalAlignment"
-                    Value="Center" />
-            <Setter Property="Margin"
-                    Value="6,12" />
-        </Style>
-    </Window.Resources>
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="1*" />
-        </Grid.ColumnDefinitions>
-        <Border>
-            <Image Source="PatternedBackground.jpg" />
-        </Border>
+  <Window.Resources>
+    <Style TargetType="Border">
+      <Setter Property="BorderBrush"
+              Value="#FFF04346" />
+      <Setter Property="BorderThickness"
+              Value="5" />
+      <Setter Property="HorizontalAlignment"
+              Value="Center" />
+      <Setter Property="VerticalAlignment"
+              Value="Center" />
+      <Setter Property="Margin"
+              Value="6,12" />
+    </Style>
+  </Window.Resources>
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="1*" />
+      <ColumnDefinition Width="1*" />
+      <ColumnDefinition Width="1*" />
+    </Grid.ColumnDefinitions>
+    <Border>
+      <Image Source="PatternedBackground.jpg" />
+    </Border>
+    <Border Grid.Column='1'
+            Background='Black'>
+     
+      <Image Source="PatternedBackground.jpg">
+        <Image.OpacityMask>
+          <LinearGradientBrush EndPoint='0.5,1'
+                               StartPoint='0.5,0'>
+            <GradientStop Offset='1' />
+            <GradientStop Color='Green'
+                          Offset='0.542' />
+          </LinearGradientBrush>
+        </Image.OpacityMask>
+      </Image>
+    </Border>
 
+    <Border Grid.Column="2"
+            CornerRadius="42">
+      <Grid>
+        <Border Name="mask"
+                Background="Orange"
+                CornerRadius="42"
+                Opacity='1'
+                Style="{x:Null}" />
 
-        <Border Grid.Column="1"
-                CornerRadius="42">
-            <Grid>
-                <Border Name="mask"
-                        Background="White"
-                        CornerRadius="42"
-                        Style="{x:Null}" />
+        <Image Source="PatternedBackground.jpg">
+          <Image.OpacityMask>
+            <VisualBrush Visual="{Binding ElementName=mask}" />
+          </Image.OpacityMask>
+        </Image>
 
-                <Image Source="PatternedBackground.jpg">
-                    <Image.OpacityMask>
-                        <VisualBrush Visual="{Binding ElementName=mask}" />
-                    </Image.OpacityMask>
-                </Image>
+      </Grid>
 
-            </Grid>
-
-        </Border>
-    </Grid>
+    </Border>
+  </Grid>
 </Window>
