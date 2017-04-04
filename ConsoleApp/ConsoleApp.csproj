@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CodeExample.cs" />
+    <Compile Include="Demo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -51,7 +52,13 @@
     <None Include=".editorconfig" />
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Demo.txt" />
+    <Content Include="Demo.vb" />
+    <Content Include="Stylesheets\demo.css" />
+    <Content Include="Stylesheets\Demo\For\Course\example.html" />
+    <Content Include="Stylesheets\style.css" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
