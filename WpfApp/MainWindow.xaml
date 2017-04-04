@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
-    </Grid>
+    <Button x:Name='button'
+            Content='Button'
+            HorizontalAlignment='Left'
+            Margin='93,41,0,0'
+            VerticalAlignment='Top'
+            Width='120' />
+    <ListBox x:Name='comboBox'
+              HorizontalAlignment='Left'
+              Margin='93,125,0,0'
+              VerticalAlignment='Top'
+              Width='120'>
+      <TextBlock Text='Red' />
+      <TextBlock Text='Orange' />
+      <TextBlock Text='Yellow' />
+    </ListBox>
+
+  </Grid>
 </Window>
