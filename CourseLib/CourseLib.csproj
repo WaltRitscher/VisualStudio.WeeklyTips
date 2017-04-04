@@ -40,15 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Guide.cs" />
+    <Compile Include="Travel\Guide.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tariff.cs" />
-    <Compile Include="Ticket.cs" />
-    <Compile Include="TourStop.cs" />
-    <Compile Include="TourStops.cs" />
-    <Compile Include="Train.cs" />
-    <Compile Include="Transit.cs" />
-    <Compile Include="Traveler.cs" />
+    <Compile Include="Travel\Tariff.cs" />
+    <Compile Include="Travel\Ticket.cs" />
+    <Compile Include="Travel\TourStop.cs" />
+    <Compile Include="Travel\TourStops.cs" />
+    <Compile Include="Vehicles\Bus.cs" />
+    <Compile Include="Vehicles\Train.cs" />
+    <Compile Include="Vehicles\Transit.cs" />
+    <Compile Include="Travel\Traveler.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
