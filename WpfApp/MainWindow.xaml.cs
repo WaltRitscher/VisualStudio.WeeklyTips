@@ -20,6 +20,8 @@ namespace WeeklyTips.WpfApp {
 	public partial class MainWindow : Window {
 		public MainWindow() {
 			InitializeComponent();
+
+      this.DataContext = CourseLib.Models.TourSource.TourStops;
 		}
 	}
 }
