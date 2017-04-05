@@ -9,5 +9,17 @@
     <Import_RootNamespace>Assets</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Images\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Sound\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)SampleCode\ArtDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SampleCode\ArtViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SampleCode\TourDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SampleCode\ToursViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)SampleCode\ArtDataSource.vb" />
+    <None Include="$(MSBuildThisFileDirectory)SampleCode\ArtViewModel.vb" />
   </ItemGroup>
 </Project>
