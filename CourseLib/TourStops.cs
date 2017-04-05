@@ -97,9 +97,14 @@ namespace CourseLib.Models {
 			var result = _tourStops.ToList<TourStop>();
 			return result.First();
 		}
+    public static TourStop Last() {
+      var result = _tourStops.ToList<TourStop>();
+      return result.Last();
+    }
 
-		public static ObservableCollection<TourStop> TourStops
+    public static ObservableCollection<TourStop> TourStops
 		{
+      // get all tour stops.
 			get
 			{
 				return _tourStops;
