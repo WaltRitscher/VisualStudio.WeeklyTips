@@ -98,6 +98,7 @@ namespace CourseLib.Models {
 			return result.First();
 		}
     public static TourStop Last() {
+      // Get last tour stop
       var result = TourStops.ToList<TourStop>();
       return result.Last();
     }
