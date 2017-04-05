@@ -103,6 +103,15 @@ namespace CourseLib.Models {
       return result.Last();
     }
 
+    public static TourStop GetByName(string name) {
+      // Get last tour stop
+      var result = TourStops.ToList<TourStop>();
+      TourStop found = result.Where(x =>
+                       x.Name.Equals(name,
+                       System.StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
+      return found;
+    }
+
     public static ObservableCollection<TourStop> TourStops
 		{
       // get all tour stops.
