@@ -94,11 +94,11 @@ namespace CourseLib.Models {
 		}
 
 		public static TourStop First() {
-			var result = _tourStops.ToList<TourStop>();
+			var result = TourStops.ToList<TourStop>();
 			return result.First();
 		}
     public static TourStop Last() {
-      var result = _tourStops.ToList<TourStop>();
+      var result = TourStops.ToList<TourStop>();
       return result.Last();
     }
 
