@@ -9,12 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "WpfApp\WpfApp.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseLib", "CourseLib\CourseLib.csproj", "{5AE7C8F4-EDDD-4E71-985E-A4AC091BB973}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{3D58DDD7-59D2-46E2-8674-211308765840}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\..\..\Courseware\Assets\DataSourceClasses\ArtViewModel.cs = ..\..\..\..\..\..\Courseware\Assets\DataSourceClasses\ArtViewModel.cs
-	EndProjectSection
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Assets", "Assets\Assets.shproj", "{CE99FD79-851F-426F-B50F-3921043CC971}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Assets\Assets.projitems*{ce99fd79-851f-426f-b50f-3921043cc971}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
