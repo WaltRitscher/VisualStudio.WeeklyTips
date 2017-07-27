@@ -15,12 +15,14 @@ namespace WeeklyTips.ConsoleApp {
 			example = "Sample text for code demo.";
 
 
-			Console.WriteLine(example);
+			Console.WriteLine(example);			
 
-			var totalCustomers = 17;
-			for (int i = 0; i < totalCustomers; i++)
+		var totalCustomers = 17;
+			for (int i = 0; i < totalCustomers; i++)    
 			{
 				Console.WriteLine($"Customer Name {i}");
+	  		// this line has mixed tabs and spaces			
+				// another line
 			}
 		}
 	}
