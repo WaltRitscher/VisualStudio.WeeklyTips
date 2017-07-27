@@ -4,16 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace WeeklyTips.ConsoleApp {
 	class CodeExample {
 
-		public void DoWork() {
-      // write the example code here...
+		public void RunExample() {
+			// write the example code here...
 
-      var commissionRate = .14M;
-      var saleAmount = 285000M;
-      var commission = commissionRate * saleAmount;
-      Console.WriteLine($"The commission payment is {commission} on the {saleAmount} sale.");
+			var yesterday = DateTime.Now.Yesterday();
+			var tomorrow = DateTime.Now.Tomorrow();
+
+			var futureDate1 = DateTime.Now.AddDays(12);
+			var futureDate2 = DateTime.Now.AddWeekdays(12);
+
+			var firstDate = DateTime.Now.FirstDayOfMonth();
+			var lastDay = DateTime.Now.LastDayOfMonth();
+
+
+			var roundedMinute = DateTime.Now.Round(DateTimeExtensions.RoundUnit.Minute);
 		}
 	}
+
+
 }
