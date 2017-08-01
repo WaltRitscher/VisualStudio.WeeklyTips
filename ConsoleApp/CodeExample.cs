@@ -8,12 +8,16 @@ namespace WeeklyTips.ConsoleApp {
 	class CodeExample {
 
 		public void DoWork() {
-      // write the example code here...
+			// write the example code here...
 
-      var commissionRate = .14M;
-      var saleAmount = 285000M;
-      var commission = commissionRate * saleAmount;
-      Console.WriteLine($"The commission payment is {commission} on the {saleAmount} sale.");
+			var firstStop = CourseLib.Models.TourSource.First();
+
+			var allStops = CourseLib.Models.TourSource.TourStops;
+
+			var q = from a in allStops
+							where a.StopNumber > 3
+							select new { a.Name, a.Description, a.StopNumber };
+
 		}
 	}
 }
