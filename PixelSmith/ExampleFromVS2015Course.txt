@@ -1,0 +1,7 @@
+This example is from my Lynda.com course:
+Visual Studio 2015 Essentials 07: Understanding Project Types
+http://www.lynda.com/Visual-Studio-tutorials/Visual-Studio-2015-Essentials-07-Understanding-Project-Types/445034-2.html
+
+See a playlist of all my Visual Studio 2015 courses at.
+
+http://www.lynda.com/SharedPlaylist/fa1f6019209840a0b17edadd7db3b51e
