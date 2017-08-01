@@ -4,6 +4,8 @@ namespace WeeklyTips.ConsoleApp
 {
 	internal static class DateTimeExtensions
 	{
+		
+
 		public static DateTime AddWeekdays(this DateTime date, int days)
 		{
 			var sign = days < 0 ? -1 : 1;
@@ -28,15 +30,7 @@ namespace WeeklyTips.ConsoleApp
 			return new DateTime(date.Year, date.Month, DateTime.DaysInMonth(date.Year, date.Month));
 		}
 
-		public static System.DateTime Yesterday(this System.DateTime whichDate)
-		{
-			return DateTime.Today.AddDays(-1);
-		}
-
-		public static System.DateTime Tomorrow(this System.DateTime whichDate)
-		{
-			return DateTime.Today.AddDays(1);
-		}
+	
 
 		public static System.DateTime Round(this DateTime candidate, RoundUnit roundUnit)
 		{
