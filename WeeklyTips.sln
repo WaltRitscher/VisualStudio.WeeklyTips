@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tip033-CodeCoverage", "Tip033-CodeCoverage", "{54555F77-188E-496F-9F73-4C561F6E2DB0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tip034-HandPanTool", "Tip034-HandPanTool", "{54555F77-188E-496F-9F73-4C561F6E2DB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
