@@ -11,8 +11,8 @@ namespace WeeklyTips.ConsoleApp {
 		public void RunExample() {
 			// write the example code here...
 
-			//var firstDate = DateTime.Now.FirstDayOfMonth();
-			//var lastDay = DateTime.Now.LastDayOfMonth();
+			var firstDate = DateTime.Now.FirstDayOfMonth();
+			var lastDay = DateTime.Now.LastDayOfMonth();
 
 			var futureDate1 = DateTime.Now.AddDays(12);
 			var futureDate2 = DateTime.Now.AddWeekdays(12);
