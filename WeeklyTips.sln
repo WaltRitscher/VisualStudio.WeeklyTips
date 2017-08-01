@@ -5,16 +5,13 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{7F6E3C34-2327-4371-B273-81C73F6B43FD}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Assets", "Assets\Assets.shproj", "{CE99FD79-851F-426F-B50F-3921043CC971}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameGeneratorLib", "NameGeneratorLib\NameGeneratorLib.csproj", "{AA8F8048-6B20-48B4-A976-EADED8674226}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WindowsFormsApp", "WindowsFormsApp\WindowsFormsApp.vbproj", "{12CAC87D-AF42-48C1-9DBE-AA18BA8FEAAF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tip027-MemorizeWindowLayout", "Tip027-MemorizeWindowLayout", "{12C4A60E-8084-4A7D-834E-4F28841DDF79}"
+EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Assets\Assets.projitems*{ce99fd79-851f-426f-b50f-3921043cc971}*SharedItemsImports = 13
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
