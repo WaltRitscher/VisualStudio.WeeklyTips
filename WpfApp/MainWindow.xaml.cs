@@ -28,6 +28,7 @@ namespace WeeklyTips.WpfApp
 
 		#endregion Show As Dialog
 
+		#region Null Result
 		private void NullResult1_Click(object sender, RoutedEventArgs e)
 		{
 			bool? result;
@@ -50,6 +51,9 @@ namespace WeeklyTips.WpfApp
 			result = win.DialogResult;
 		}
 
+		#endregion
+
+		#region Boolean Result
 		private void TrueFalseResult_Click(object sender, RoutedEventArgs e)
 		{
 			bool? result;
@@ -71,7 +75,9 @@ namespace WeeklyTips.WpfApp
 			//  Also note that the Dialog will always return false unless you write code to return true.  
 			MessageText.Text = result.ToString();
 		}
+		#endregion
 
+		#region Other Values
 		private void OtherValues_Click(object sender, RoutedEventArgs e)
 		{
 			bool? result;
@@ -80,6 +86,7 @@ namespace WeeklyTips.WpfApp
 
 			var numberOfCopies = win.NumberOfCopies; // add custom property to dialog
 			MessageText2.Text = numberOfCopies.ToString();
-		}
+		} 
+		#endregion
 	}
 }
