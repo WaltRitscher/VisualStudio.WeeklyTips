@@ -84,8 +84,12 @@ namespace WeeklyTips.WpfApp
 			var win = new Views.PrintWindow();
 			result = win.ShowDialog();
 
-			var numberOfCopies = win.NumberOfCopies; // add custom property to dialog
-			MessageText2.Text = numberOfCopies.ToString();
+			if (result == true)
+			{
+				var numberOfCopies = win.NumberOfCopies; // add custom property to dialog
+				MessageText2.Text = numberOfCopies.ToString();
+			}
+		
 		} 
 		#endregion
 	}
