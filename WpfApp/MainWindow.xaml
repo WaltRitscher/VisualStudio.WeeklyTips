@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+		<TabControl>
+			<TabItem Header="Show as Dialog" />
+			<TabItem Header="Null Result" />
+			<TabItem Header="Get True/False result" />
+			<TabItem Header="Get Other Values from Dialog" />
+		</TabControl>
     </Grid>
 </Window>
