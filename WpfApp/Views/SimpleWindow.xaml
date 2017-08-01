@@ -5,30 +5,44 @@
         xmlns:local="clr-namespace:WeeklyTips.WpfApp.Views"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Title="Simple::Window"
-        Width="600"
-        Height="500 "
+        Width="525"
+        Height="350"
         mc:Ignorable="d">
+	<Window.Resources>
+		<Style TargetType="Button">
+			<Setter Property="HorizontalAlignment"
+							Value="Center" />
+			<Setter Property="Margin"
+							Value="3" />
+			<Setter Property="MinWidth"
+							Value="120" />
+			<Setter Property="Padding"
+							Value="7" />
+		</Style>
+	</Window.Resources>
 	<Grid Margin="2">
 		<Grid.RowDefinitions>
 			<RowDefinition />
 			<RowDefinition Height="Auto" />
+			<RowDefinition Height="20" />
 		</Grid.RowDefinitions>
 
-		<Button x:Name="CancelButton"
-		        Grid.Row="1"
-		        Width="75"
-		        Height="23"
-		        Margin="0,12,0,0"
-		        HorizontalAlignment="Right"
-		        Click="CancelButton_Click"
-		        Content="Cancel" />
-		<Button x:Name="OKButton"
-		        Grid.Row="1"
-		        Width="75"
-		        Height="23"
-		        Margin="0,12,79,0"
-		        HorizontalAlignment="Right"
-		        Click="OKButton_Click"
-		        Content="OK" />
+		<StackPanel Grid.Row="1"
+		            HorizontalAlignment="Right"
+		            Orientation="Horizontal">
+
+
+
+
+			<Button x:Name="OKButton"
+			        Grid.Row="1"
+			        HorizontalAlignment="Right"
+			        Click="OKButton_Click"
+			        Content="OK" />
+			<Button x:Name="CancelButton"
+			        HorizontalAlignment="Right"
+			        Click="CancelButton_Click"
+			        Content="Cancel" />
+		</StackPanel>
 	</Grid>
 </Window>

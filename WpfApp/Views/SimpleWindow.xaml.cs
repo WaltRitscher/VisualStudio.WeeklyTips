@@ -33,5 +33,7 @@ namespace WeeklyTips.WpfApp.Views
 		{
 			this.DialogResult = false;
 		}
+
+	
 	}
 }

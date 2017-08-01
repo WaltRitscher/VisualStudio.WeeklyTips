@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeeklyTips.WpfApp.Views"
         mc:Ignorable="d"
-        Title="Print::Window" Height="300" Width="300">
+				Title="Print::Window"
+				Width="525"
+				Height="350">
 	<Grid x:Name="LayoutRoot"
 				Margin="2">
 		<Grid.ColumnDefinitions>
@@ -41,7 +43,7 @@
 							 VerticalAlignment="Top"
 							 Text="Number of Copies"
 							 Grid.Row="1"
-							 Margin="0,4,0,0" />
+							 Margin="0,4,24,0" />
 		<TextBox x:Name="numberCopiesTextbox"
 						 Grid.Row="1"
 						 Grid.Column="1"
