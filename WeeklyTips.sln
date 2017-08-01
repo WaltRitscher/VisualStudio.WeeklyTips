@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseLib", "CourseLib\Cour
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Assets", "Assets\Assets.shproj", "{CE99FD79-851F-426F-B50F-3921043CC971}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tip026-DateRounding", "Tip026-DateRounding", "{B01AD62C-1387-4717-9DE4-015B4B75D1FE}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Assets\Assets.projitems*{ce99fd79-851f-426f-b50f-3921043cc971}*SharedItemsImports = 13
