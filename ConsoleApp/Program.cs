@@ -8,8 +8,8 @@ namespace WeeklyTips.ConsoleApp {
 	class Program {
 		static void Main(string[] args) {
 
-			// Run the example from the main method.
-
+      // Run the example from the main method.
+      CodeExample.DoWork();
 
 		}
 	}
