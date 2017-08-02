@@ -9,8 +9,13 @@ namespace WeeklyTips.ConsoleApp
 {
   class CodeExample
   {
+		// why are magic strings considered undesirable.
 
-    public static void DoWork()
+		// Mistyping. It's easy to mistype a string literal. 
+		// Duplicated. String might be repeated everywhere.
+		// Refactoring. It's easier to refactor strongly-typed identifiers. 
+		// Code analysis: Invisible to tools like Intellisense and AutoComplete
+		public static void DoWork()
     {
       // write the example code here...
 
@@ -79,9 +84,9 @@ namespace WeeklyTips.ConsoleApp
 
 
 
-    UseWithPropertyChanged()
+   internal void  UseWithPropertyChanged()
     {
-
+			this.FileCount = 5;
     }
 
     private int _fileCount;
