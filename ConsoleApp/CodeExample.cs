@@ -82,8 +82,6 @@ namespace WeeklyTips.ConsoleApp
 
 		}
 
-
-
 		internal void UseWithPropertyChanged()
 		{
 			this.FileCount = 5;
