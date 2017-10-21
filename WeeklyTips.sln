@@ -3,20 +3,38 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tip038-RemoveComments", "Tip038-RemoveComments", "{54555F77-188E-496F-9F73-4C561F6E2DB0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tip039-KeyboardShortcuts-Toolbox", "Tip039-KeyboardShortcuts-Toolbox", "{54555F77-188E-496F-9F73-4C561F6E2DB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommentRemoverConsole", "CommentRemover\CommentRemoverConsole\CommentRemoverConsole.csproj", "{23C29703-38A4-44F4-B3C5-8C90D6E3961B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "WpfApp\WpfApp.csproj", "{C7E151BF-9638-41A1-951B-4A56643D87F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{23C29703-38A4-44F4-B3C5-8C90D6E3961B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23C29703-38A4-44F4-B3C5-8C90D6E3961B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23C29703-38A4-44F4-B3C5-8C90D6E3961B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{23C29703-38A4-44F4-B3C5-8C90D6E3961B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7E151BF-9638-41A1-951B-4A56643D87F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7E151BF-9638-41A1-951B-4A56643D87F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7E151BF-9638-41A1-951B-4A56643D87F2}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{C7E151BF-9638-41A1-951B-4A56643D87F2}.Debug|ARM.Build.0 = Debug|Any CPU
+		{C7E151BF-9638-41A1-951B-4A56643D87F2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C7E151BF-9638-41A1-951B-4A56643D87F2}.Debug|x64.Build.0 = Debug|Any CPU
+		{C7E151BF-9638-41A1-951B-4A56643D87F2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C7E151BF-9638-41A1-951B-4A56643D87F2}.Debug|x86.Build.0 = Debug|Any CPU
+		{C7E151BF-9638-41A1-951B-4A56643D87F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7E151BF-9638-41A1-951B-4A56643D87F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7E151BF-9638-41A1-951B-4A56643D87F2}.Release|ARM.ActiveCfg = Release|Any CPU
+		{C7E151BF-9638-41A1-951B-4A56643D87F2}.Release|ARM.Build.0 = Release|Any CPU
+		{C7E151BF-9638-41A1-951B-4A56643D87F2}.Release|x64.ActiveCfg = Release|Any CPU
+		{C7E151BF-9638-41A1-951B-4A56643D87F2}.Release|x64.Build.0 = Release|Any CPU
+		{C7E151BF-9638-41A1-951B-4A56643D87F2}.Release|x86.ActiveCfg = Release|Any CPU
+		{C7E151BF-9638-41A1-951B-4A56643D87F2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
