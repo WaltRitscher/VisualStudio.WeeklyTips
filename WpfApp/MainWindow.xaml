@@ -15,29 +15,29 @@
 			<TabItem Header="Simple Line">
 				<Grid>
 					<Line Stroke="Orange"
-					      
-					      StrokeThickness="10"
+                          StrokeDashArray="4"
+                          StrokeThickness="10"
 					      X1="60"
 					      Y1="150"
 					      X2="560"
 					      Y2="150" />
 					<Line Stroke="Orange"
-					     
-					      StrokeThickness="10"
+                          StrokeDashArray="4,2,8"
+                          StrokeThickness="10"
 					      X1="60"
-					      Y1="200"
+					      Y1="180"
 					      X2="560"
-					      Y2="200" />
+					      Y2="180" />
 				</Grid>
 			</TabItem>
-			<TabItem Header="Border">
+			<TabItem Header="Ellipse">
 				<Ellipse Width="320"
 				         Height="320"
 				         Margin="30"
 				         HorizontalAlignment="Left"
 				         Fill="White"
 				         Stroke="Orange"
-				         StrokeDashArray=".1,.4"
+				         StrokeDashArray=".1,.2"
 				         StrokeEndLineCap="Triangle"
 				         StrokeThickness="15">
 
