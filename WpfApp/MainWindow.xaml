@@ -6,98 +6,137 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         Title="MainWindow"
-        MinWidth="800"
+        MinWidth="600"
         MinHeight="600"
         FontSize="18"
         WindowState="Maximized">
-	<Grid>
-		<TabControl>
-			<TabItem Header="Simple Line">
-				<Grid>
-					<Line Stroke="Orange"
-                          
+    <Grid>
+        <TabControl>
+            <TabItem Header="Example">
+                <Grid>
+                    <Line Stroke="LightSeaGreen"
                           StrokeThickness="10"
-					      X1="60"
-					      Y1="150"
-					      X2="560"
-					      Y2="150" />
-					<Line Stroke="Orange"
-                         
+                          X1="60"
+                          Y1="100"
+                          X2="560"
+                          Y2="100" />
+                    <Line Stroke="Orange"
                           StrokeThickness="10"
-					      X1="60"
-					      Y1="180"
-					      X2="560"
-					      Y2="180" />
-				</Grid>
-			</TabItem>
-			<TabItem Header="Ellipse">
-				<Ellipse Width="320"
-				         Height="320"
-				         Margin="30"
-				         HorizontalAlignment="Left"
-				         Fill="White"
-				         Stroke="Orange"
-				         StrokeDashArray=".1,.4"
-				         StrokeEndLineCap="Triangle"
-				         StrokeThickness="15">
+                          StrokeDashArray=".2"
+                          X1="60"
+                          Y1="150"
+                          X2="560"
+                          Y2="150" />
+                    <Line Stroke="DarkOrange"
+                          StrokeThickness="10"
+                          StrokeDashArray=".4"
+                          X1="60"
+                          Y1="165"
+                          X2="560"
+                          Y2="165" />
+                    <Line Stroke="Orange"
+                          StrokeThickness="10"
+                          StrokeDashArray=".2"
+                          X1="60"
+                          Y1="180"
+                          X2="560"
+                          Y2="180" />
 
-				</Ellipse>
-			</TabItem>
-			<TabItem Header="Tryout">
-				<Grid>
-					<Grid.ColumnDefinitions>
-						<ColumnDefinition Width="auto" />
-						<ColumnDefinition Width="1*" />
-					</Grid.ColumnDefinitions>
-					<StackPanel Margin="40">
-						<Rectangle x:Name="mainRect"
-											 Width="400"
-											 Height="300"
-											 Margin="30"
-											 HorizontalAlignment="Left"
-											 Fill="SteelBlue"
-											 Stroke="Orange"
-											 StrokeThickness="15" StrokeDashArray='2,2,4,4'/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Simple Line">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="15*" />
+                        <ColumnDefinition Width="362*" />
+                    </Grid.ColumnDefinitions>
+                    <Line Stroke="Orange"
+                          StrokeThickness="10"
+                          X1="60"
+                          Y1="150"
+                          X2="560"
+                          Y2="150"
+                          Grid.ColumnSpan="2" />
+                    <Line Stroke="Orange"
+                          StrokeThickness="10"
+                          X1="60"
+                          Y1="180"
+                          X2="560"
+                          Y2="180"
+                          Grid.ColumnSpan="2" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Ellipse">
+                <Ellipse Width="320"
+                         Height="320"
+                         Margin="30"
+                         HorizontalAlignment="Left"
+                         Fill="White"
+                         Stroke="Orange"
+                         StrokeDashArray=".1,.4"
+                         StrokeEndLineCap="Triangle"
+                         StrokeThickness="15">
 
-					</StackPanel>
-					<StackPanel Grid.Column="1"
-					            Width="120" HorizontalAlignment='Left'
-					            Margin="0,60">
-						<TextBlock>Solid:</TextBlock>
-						<Slider x:Name="SolidSlider1"
-						        IsSnapToTickEnabled="True"
-						        Maximum="12"
-						        Minimum=".5"
-						        TickFrequency=".5"
-						        Value="2" />
+                </Ellipse>
+            </TabItem>
 
-						<TextBlock>Space:</TextBlock>
-						<Slider x:Name="SpaceSlider1"
-						        IsSnapToTickEnabled="True"
-						        Maximum="12"
-						        Minimum=".5"
-						        TickFrequency=".5"
-						        Value="2" />
+            <TabItem Header="Tryout">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Margin="20,20">
+                        <Rectangle x:Name="mainRect"
+                                   Width="400"
+                                   Height="300"
+                                   Margin="30"
+                                   HorizontalAlignment="Left"
+                                   Fill="SteelBlue"
+                                   Stroke="Orange"
+                                   StrokeThickness="15"
+                                   StrokeDashArray='2,2,4,4' />
 
-						<TextBlock>Solid:</TextBlock>
-						<Slider x:Name="SolidSlider2"
-						        IsSnapToTickEnabled="True"
-						        Maximum="12"
-						        Minimum=".5"
-						        TickFrequency=".5"
-						        Value="4" />
+                    </StackPanel>
+                    <StackPanel Grid.Column="1"
+                                Width="120"
+                                HorizontalAlignment='Left'
+                                Margin="0,60">
+                        <TextBlock>Solid:</TextBlock>
+                        <Slider x:Name="SolidSlider1"
+                                IsSnapToTickEnabled="True"
+                                Maximum="12"
+                                Minimum=".5"
+                                TickFrequency=".5"
+                                Value="2" />
 
-						<TextBlock>Space:</TextBlock>
-						<Slider x:Name="SpaceSlider2"
-						        IsSnapToTickEnabled="True"
-						        Maximum="12"
-						        Minimum=".5"
-						        TickFrequency=".5"
-						        Value="4" />
+                        <TextBlock>Space:</TextBlock>
+                        <Slider x:Name="SpaceSlider1"
+                                IsSnapToTickEnabled="True"
+                                Maximum="12"
+                                Minimum=".5"
+                                TickFrequency=".5"
+                                Value="2" />
 
-					</StackPanel>
-				</Grid>
-			</TabItem>
-		</TabControl>
-	</Grid>
+                        <TextBlock>Solid:</TextBlock>
+                        <Slider x:Name="SolidSlider2"
+                                IsSnapToTickEnabled="True"
+                                Maximum="12"
+                                Minimum=".5"
+                                TickFrequency=".5"
+                                Value="4" />
+
+                        <TextBlock>Space:</TextBlock>
+                        <Slider x:Name="SpaceSlider2"
+                                IsSnapToTickEnabled="True"
+                                Maximum="12"
+                                Minimum=".5"
+                                TickFrequency=".5"
+                                Value="4" />
+
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
 </Window>
