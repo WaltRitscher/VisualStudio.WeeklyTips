@@ -1,18 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
+﻿using System.Windows;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace WeeklyTips.WpfApp
 {
@@ -24,57 +11,25 @@ namespace WeeklyTips.WpfApp
     public MainWindow()
     {
       InitializeComponent();
+      this.Loaded += MainWindow_Loaded;
     }
 
-    private void dashBox_TextChanged(object sender, TextChangedEventArgs e)
+    private void MainWindow_Loaded(object sender, RoutedEventArgs e)
     {
+      SolidSlider1.ValueChanged += Slider_ValueChanged;
+      SolidSlider2.ValueChanged += Slider_ValueChanged;
+      SpaceSlider1.ValueChanged += Slider_ValueChanged;
+      SpaceSlider2.ValueChanged += Slider_ValueChanged;
+    }
 
+    private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+    {
       DoubleCollection nums = new DoubleCollection();
-      nums.Add(GetDash(dashBox1));
-      nums.Add(GetDash(dashBox2));
-      nums.Add(GetDash(dashBox3));
-      nums.Add(GetDash(dashBox4));
-
+      nums.Add(SolidSlider1.Value);
+      nums.Add(SolidSlider2.Value);
+      nums.Add(SpaceSlider1.Value);
+      nums.Add(SpaceSlider2.Value);
       mainRect.StrokeDashArray = nums;
     }
-
-    public double GetDash(TextBox tb)
-    {
-      if (tb == null) return 0;
-      double candidate = 0;
-      if (tb.Text.Length > 0)
-      {
-        double.TryParse(tb.Text, NumberStyles.Any, null, out candidate);
-
-      }
-      return candidate;
-    }
-
-    private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-    {
-      TextBlock tb = list1.SelectedItem as TextBlock;
-      if (tb != null)
-      {
-        if (tb.Text == "Flat")
-        {
-          mainRect.StrokeDashCap = PenLineCap.Flat;
-        }
-        if (tb.Text == "Round")
-        {
-          mainRect.StrokeDashCap = PenLineCap.Round;
-        }
-        if (tb.Text == "Triangle")
-        {
-          mainRect.StrokeDashCap = PenLineCap.Triangle;
-        }
-        if (tb.Text == "Square")
-        {
-          mainRect.StrokeDashCap = PenLineCap.Square;
-        }
-
-      }
-    }
   }
-
 }
-

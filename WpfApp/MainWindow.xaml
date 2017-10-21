@@ -8,7 +8,8 @@
 				Title="MainWindow"
 				MinHeight="600"
 				MinWidth="800"
-				WindowState='Maximized'>
+				WindowState='Maximized'
+				FontSize='18'>
 	<Grid>
 		<TabControl>
 			<TabItem Header='Simple Line'>
@@ -30,59 +31,71 @@
 				</Grid>
 			</TabItem>
 			<TabItem Header='Border'>
+				<Ellipse HorizontalAlignment='Left'
+								 Width='320'
+								 Margin='30'
+								 Height='320'
+								 Stroke='Orange'
+								 Fill='White'
+								 StrokeThickness='15'
+								 StrokeDashArray='.1,.4'
+								 StrokeEndLineCap='Triangle'>
 
+				</Ellipse>
 			</TabItem>
 			<TabItem Header='Tryout'>
-				<StackPanel Margin='40'>
-					<Rectangle x:Name='mainRect'
-										 HorizontalAlignment='Left'
-										 Width='400'
-										 Margin='30'
-										 Height='300'
-										 Stroke='Orange'
-										 Fill='SteelBlue'
-										 StrokeThickness='15'>
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width='auto' />
+						<ColumnDefinition Width='1*' />
+					</Grid.ColumnDefinitions>
+					<StackPanel Margin='40'>
+						<Rectangle x:Name='mainRect'
+											 HorizontalAlignment='Left'
+											 Width='400'
+											 Margin='30'
+											 Height='300'
+											 Stroke='Orange'
+											 Fill='SteelBlue'
+											 StrokeThickness='15'>
 
-					</Rectangle>
-					<TextBlock>Solid:</TextBlock>
-					<TextBox x:Name='dashBox1'
-									 Text='3'
-									 TextChanged='dashBox_TextChanged'
-									 HorizontalAlignment='Left'
-									 MinWidth='40'
-									 Margin='10,2' />
-					<TextBlock>Space:</TextBlock>
-					<TextBox x:Name='dashBox2'
-									 Text='5'
-									 TextChanged='dashBox_TextChanged'
-									 HorizontalAlignment='Left'
-									 MinWidth='40'
-									 Margin='10,2' />
-					<TextBlock>Solid:</TextBlock>
-					<TextBox x:Name='dashBox3'
-									 Text='1'
-									 TextChanged='dashBox_TextChanged'
-									 HorizontalAlignment='Left'
-									 MinWidth='40'
-									 Margin='10,2' />
-					<TextBlock>Space:</TextBlock>
-					<TextBox x:Name='dashBox4'
-									 Text='6'
-									 TextChanged='dashBox_TextChanged'
-									 HorizontalAlignment='Left'
-									 MinWidth='40'
-									 Margin='10,2' />
-					<TextBlock>LineCap:</TextBlock>
-					<ListBox Margin='10,2'
-									 Name='list1'
-									 SelectionChanged='ListBox_SelectionChanged'>
+						</Rectangle>
 
-						<TextBlock Text='Flat' />
-						<TextBlock Text='Round' />
-						<TextBlock Text='Triangle' />
-						<TextBlock Text='Square' />
-					</ListBox>
-				</StackPanel>
+					</StackPanel>
+					<StackPanel Grid.Column='1'
+											Margin='0,60'
+											Width='120'>
+						<TextBlock>Solid:</TextBlock>
+						<Slider x:Name='SolidSlider1'
+										Minimum='.5'
+										Maximum='12'
+										IsSnapToTickEnabled='True'
+										TickFrequency='.5' />
+
+						<TextBlock>Space:</TextBlock>
+						<Slider x:Name='SpaceSlider1'
+										Minimum='.5'
+										Maximum='12'
+										IsSnapToTickEnabled='True'
+										TickFrequency='.5' />
+
+						<TextBlock>Solid:</TextBlock>
+						<Slider x:Name='SolidSlider2'
+										Minimum='.5'
+										Maximum='12'
+										IsSnapToTickEnabled='True'
+										TickFrequency='.5' />
+
+						<TextBlock>Space:</TextBlock>
+						<Slider x:Name='SpaceSlider2'
+										Minimum='.5'
+										Maximum='12'
+										Value='4'
+										IsSnapToTickEnabled='True'
+										TickFrequency='.5' />
+
+					</StackPanel>
+				</Grid>
 			</TabItem>
 		</TabControl>
 	</Grid>
