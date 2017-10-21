@@ -1,12 +1,89 @@
 ﻿<Window x:Class="WeeklyTips.WpfApp.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 				xmlns:local="clr-namespace:WeeklyTips.WpfApp"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+				mc:Ignorable="d"
+				Title="MainWindow"
+				MinHeight="600"
+				MinWidth="800"
+				WindowState='Maximized'>
+	<Grid>
+		<TabControl>
+			<TabItem Header='Simple Line'>
+				<Grid>
+					<Line X1='60'
+								X2='560'
+								Y1='150'
+								Y2='150'
+								Stroke='Orange'
+								StrokeThickness='5'
+								StrokeDashArray='8' />
+					<Line X1='60'
+								X2='560'
+								Y1='200'
+								Y2='200'
+								Stroke='Orange'
+								StrokeThickness='10'
+								StrokeDashArray='4' />
+				</Grid>
+			</TabItem>
+			<TabItem Header='Border'>
+
+			</TabItem>
+			<TabItem Header='Tryout'>
+				<StackPanel Margin='40'>
+					<Rectangle x:Name='mainRect'
+										 HorizontalAlignment='Left'
+										 Width='400'
+										 Margin='30'
+										 Height='300'
+										 Stroke='Orange'
+										 Fill='SteelBlue'
+										 StrokeThickness='15'>
+
+					</Rectangle>
+					<TextBlock>Solid:</TextBlock>
+					<TextBox x:Name='dashBox1'
+									 Text='3'
+									 TextChanged='dashBox_TextChanged'
+									 HorizontalAlignment='Left'
+									 MinWidth='40'
+									 Margin='10,2' />
+					<TextBlock>Space:</TextBlock>
+					<TextBox x:Name='dashBox2'
+									 Text='5'
+									 TextChanged='dashBox_TextChanged'
+									 HorizontalAlignment='Left'
+									 MinWidth='40'
+									 Margin='10,2' />
+					<TextBlock>Solid:</TextBlock>
+					<TextBox x:Name='dashBox3'
+									 Text='1'
+									 TextChanged='dashBox_TextChanged'
+									 HorizontalAlignment='Left'
+									 MinWidth='40'
+									 Margin='10,2' />
+					<TextBlock>Space:</TextBlock>
+					<TextBox x:Name='dashBox4'
+									 Text='6'
+									 TextChanged='dashBox_TextChanged'
+									 HorizontalAlignment='Left'
+									 MinWidth='40'
+									 Margin='10,2' />
+					<TextBlock>LineCap:</TextBlock>
+					<ListBox Margin='10,2'
+									 Name='list1'
+									 SelectionChanged='ListBox_SelectionChanged'>
+
+						<TextBlock Text='Flat' />
+						<TextBlock Text='Round' />
+						<TextBlock Text='Triangle' />
+						<TextBlock Text='Square' />
+					</ListBox>
+				</StackPanel>
+			</TabItem>
+		</TabControl>
+	</Grid>
 </Window>
