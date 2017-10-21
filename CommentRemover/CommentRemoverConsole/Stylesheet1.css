@@ -1,0 +1,22 @@
+﻿/*
+   Block comment
+	 Work in progress for Roux Academy client
+	 Deadline for final review is June 15th
+*/
+
+
+body {
+}
+
+p {
+	margin: 1em; /* Comment here */
+	padding: 2em;
+	/* color: blue; */
+	background-color: blue;
+}
+
+/* - - -  Customer Styles - - -  */
+.dark  {
+}
+.light {
+}

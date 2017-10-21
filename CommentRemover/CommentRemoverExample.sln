@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tip038-RemoveComments", "Tip038-RemoveComments", "{54555F77-188E-496F-9F73-4C561F6E2DB0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommentRemoverConsole", "CommentRemover\CommentRemoverConsole\CommentRemoverConsole.csproj", "{23C29703-38A4-44F4-B3C5-8C90D6E3961B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommentRemoverConsole", "CommentRemoverConsole\CommentRemoverConsole.csproj", "{23C29703-38A4-44F4-B3C5-8C90D6E3961B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,8 +18,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D8C6721D-8E85-446A-A6A4-B2F0DF00FD5C}
 	EndGlobalSection
 EndGlobal
