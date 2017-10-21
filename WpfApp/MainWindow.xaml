@@ -15,14 +15,14 @@
 			<TabItem Header="Simple Line">
 				<Grid>
 					<Line Stroke="Orange"
-                          StrokeDashArray="4"
+                          
                           StrokeThickness="10"
 					      X1="60"
 					      Y1="150"
 					      X2="560"
 					      Y2="150" />
 					<Line Stroke="Orange"
-                          StrokeDashArray="4,2,8"
+                         
                           StrokeThickness="10"
 					      X1="60"
 					      Y1="180"
@@ -37,7 +37,7 @@
 				         HorizontalAlignment="Left"
 				         Fill="White"
 				         Stroke="Orange"
-				         StrokeDashArray=".1,.2"
+				         StrokeDashArray=".1,.4"
 				         StrokeEndLineCap="Triangle"
 				         StrokeThickness="15">
 
