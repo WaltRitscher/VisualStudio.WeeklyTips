@@ -26,8 +26,8 @@ namespace WeeklyTips.WpfApp
     {
       DoubleCollection nums = new DoubleCollection();
       nums.Add(SolidSlider1.Value);
-      nums.Add(SolidSlider2.Value);
       nums.Add(SpaceSlider1.Value);
+      nums.Add(SolidSlider2.Value);
       nums.Add(SpaceSlider2.Value);
       mainRect.StrokeDashArray = nums;
     }
