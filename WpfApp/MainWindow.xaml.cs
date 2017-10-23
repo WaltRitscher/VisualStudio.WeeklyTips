@@ -22,7 +22,8 @@ namespace WeeklyTips.WpfApp
     private void GetSource()
     {
       var source = new SalesDataSource();
-      Sales1.DataContext = source.GetRandomized();
+			SalesNormal.DataContext = source.GetAll();
+			Sales1.DataContext = source.GetRandomized();
       Sales2.DataContext = source.GetRandomized();
     }
 

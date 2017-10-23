@@ -11,18 +11,35 @@
         FontSize="18"
         WindowState="Maximized">
 	<StackPanel>
-		<Button Margin="20"
+		<Button Margin="15"
 		        Padding="5"
 		        HorizontalAlignment="Left"
 		        Click="Button_Click"
 		        Content="Update" />
-		<ListBox x:Name="Sales1"
-		         ItemsSource="{Binding}">
+		<ListBox x:Name="SalesNormal"
+						 ItemsSource="{Binding}" >
 			<ListBox.ItemTemplate>
 				<DataTemplate>
 					<Grid>
 						<Rectangle Width="{Binding}"
-						           Height="25"
+											 Height="25"
+											 Margin="1"
+											 Fill="DarkRed" />
+						<TextBlock Margin="20,0,0,0"
+											 Foreground="White"
+											 Text="{Binding}" />
+					</Grid>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+
+		<ListBox x:Name="Sales1"
+		         ItemsSource="{Binding}" Margin="0,20,0,0">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Grid>
+						<Rectangle Width="{Binding}"
+											 Height="25"
 						           Margin="1"
 						           Fill="Orange" />
 						<TextBlock Margin="20,0,0,0"
