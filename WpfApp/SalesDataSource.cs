@@ -41,13 +41,5 @@ namespace WeeklyTips.WpfApp
       return new ObservableCollection<int> (q.ToList());
     }
 
-    internal ObservableCollection<int> GetRandomized3()
-    {
-      var q = from s in _sales
-              orderby Guid.NewGuid() // Preferred way according to some developers. it's thread safe 
-              select s;
-
-      return new ObservableCollection<int>(q.ToList());
-    }
-  }
+     }
 }

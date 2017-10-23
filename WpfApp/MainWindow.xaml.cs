@@ -22,8 +22,8 @@ namespace WeeklyTips.WpfApp
     private void GetSource()
     {
       var source = new SalesDataSource();
-      Sales1.DataContext = source.GetRandomized3();
-      Sales2.DataContext = source.GetRandomized3();
+      Sales1.DataContext = source.GetRandomized();
+      Sales2.DataContext = source.GetRandomized();
     }
 
     private void Button_Click(object sender, RoutedEventArgs e)
