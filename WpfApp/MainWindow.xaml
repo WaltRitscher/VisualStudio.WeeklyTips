@@ -33,7 +33,7 @@
 			</ListBox.ItemTemplate>
 		</ListBox>
 		<ListBox x:Name="Sales2"
-		         ItemsSource="{Binding}">
+		         ItemsSource="{Binding}" Margin="0,20,0,0">
 			<ListBox.ItemTemplate>
 				<DataTemplate>
 					<Grid>
