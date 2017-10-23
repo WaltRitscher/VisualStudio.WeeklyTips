@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tip041-CustomizeContextMenus", "Tip041-CustomizeContextMenus", "{54555F77-188E-496F-9F73-4C561F6E2DB0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tip042-CopyFilePath", "Tip042-CopyFilePath", "{54555F77-188E-496F-9F73-4C561F6E2DB0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "WpfApp\WpfApp.csproj", "{C7E151BF-9638-41A1-951B-4A56643D87F2}"
 EndProject
