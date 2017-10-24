@@ -6,23 +6,16 @@ using System.Threading.Tasks;
 
 
 namespace WeeklyTips.ConsoleApp {
-	class CodeExample {
+  class CodeExample
+  {
 
-		public void RunExample() {
-			// write the example code here...
-
-			//var firstDate = DateTime.Now.FirstDayOfMonth();
-			//var lastDay = DateTime.Now.LastDayOfMonth();
-
-			var futureDate1 = DateTime.Now.AddDays(12);
-			var futureDate2 = DateTime.Now.AddWeekdays(12);
-
-			
+    public void RunExample()
+    {
+      // write the example code here...
 
 
-			var roundedMinute = DateTime.Now.Round(DateTimeExtensions.RoundUnit.Minute);
-		}
-	}
 
+    }
 
+  }
 }

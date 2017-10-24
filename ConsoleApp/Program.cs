@@ -8,11 +8,28 @@ namespace WeeklyTips.ConsoleApp {
 	class Program {
 		static void Main(string[] args) {
 
-			// Run the example from the main method.
-			var example = new CodeExample();
+      // Run the example from the main method.
 
-			example.RunExample();
+      var tour = new Tour();
+      tour.TourName = "Cycle the Riverwalk";
+      tour.AvailableMonths = Months.May; // = 5
+      Console.WriteLine(tour.AvailableMonths.ToString());
 
-		}
+      tour.AvailableMonths = Months.June | Months.August; // = 14
+      Console.WriteLine(tour.AvailableMonths.ToString());
+
+
+      Console.WriteLine();
+      tour.AvailableDays = Days.Sunday; // = 64
+      Console.WriteLine(tour.AvailableDays.ToString());
+
+      tour.AvailableDays = Days.Monday | Days.Wednesday| Days.Thursday; // = 13 (or 0000 1101)
+
+      Console.WriteLine(tour.AvailableDays.ToString());
+
+      Console.WriteLine();
+      Console.ReadLine();
+
+    }
 	}
 }
