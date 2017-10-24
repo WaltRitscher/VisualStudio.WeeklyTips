@@ -25,21 +25,23 @@ namespace WeeklyTips.ConsoleApp
     December = 12
   }
 
-  [Flags]
-  public enum Days
-  {
-    None = 0,          // 0000 0000
-    Monday = 1,        // 0000 0001
-    Tuesday = 2,       // 0000 0010  
-    Wednesday = 4,     // 0000 0100  
-    Thursday = 8,      // 0000 1000
-    Friday = 16,       // 0001 0000
-    Saturday = 32,     // 0010 0000
-    Sunday = 64        // 0100 0000
-  }
+	#region 1st version
+	[Flags]
+	public enum Days
+	{
+		None = 0,          // 0000 0000
+		Monday = 1,        // 0000 0001
+		Tuesday = 2,       // 0000 0010  
+		Wednesday = 4,     // 0000 0100  
+		Thursday = 8,      // 0000 1000
+		Friday = 16,       // 0001 0000
+		Saturday = 32,     // 0010 0000
+		Sunday = 64        // 0100 0000
+	} 
+	#endregion
 
-  #region 2nd version
-  [Flags]
+	#region 2nd version
+	[Flags]
   public enum Days2
   {
     None      = 0x0000,
