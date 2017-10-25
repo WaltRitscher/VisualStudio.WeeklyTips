@@ -26,7 +26,7 @@ namespace WeeklyTips.ConsoleApp {
 			List<TourStop> stops = null;
 
 	
-			List < Person > persons = null;
+			List <Person> persons = null;
      
     }
 	}
