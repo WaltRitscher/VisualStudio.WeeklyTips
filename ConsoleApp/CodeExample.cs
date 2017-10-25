@@ -14,13 +14,6 @@ namespace WeeklyTips.ConsoleApp {
 			//var firstDate = DateTime.Now.FirstDayOfMonth();
 			//var lastDay = DateTime.Now.LastDayOfMonth();
 
-			var futureDate1 = DateTime.Now.AddDays(12);
-			var futureDate2 = DateTime.Now.AddWeekdays(12);
-
-			
-
-
-			var roundedMinute = DateTime.Now.Round(DateTimeExtensions.RoundUnit.Minute);
 		}
 	}
 
