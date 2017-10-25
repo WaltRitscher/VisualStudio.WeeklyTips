@@ -13,10 +13,9 @@ namespace WeeklyTips.ConsoleApp
     public void RunExample()
     {
 
-			
       Tour tour1 = null;
 			
-			string tourName;
+			string tourName = "Mid century modern architecture";
 			// this throws a null reference exception if tour1 is null
 			#region Check For null
 			if (tour1 == null)
