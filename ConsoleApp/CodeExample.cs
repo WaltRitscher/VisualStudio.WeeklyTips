@@ -9,7 +9,13 @@ namespace WeeklyTips.ConsoleApp {
 	class CodeExample {
 
 		public void RunExample() {
-      // write the example code here...
+			// write the example code here...
+
+			
+			var guide = new Guide();
+			Person person = guide;
+			 // guide =  person as Guide;
+
       var legacy = new LegacyLibrary();
       var source = new PersonSource();
 			List<TourStop> stops = null;
