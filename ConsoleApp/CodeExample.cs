@@ -14,7 +14,7 @@ namespace WeeklyTips.ConsoleApp {
 			
 			var guide = new Guide();
 			Person person = guide;
-			 // guide =  person as Guide;
+			  //guide =  person;
 
       var legacy = new LegacyLibrary();
 
