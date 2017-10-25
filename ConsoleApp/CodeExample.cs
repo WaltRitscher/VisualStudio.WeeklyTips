@@ -12,11 +12,11 @@ namespace WeeklyTips.ConsoleApp {
       // write the example code here...
       var legacy = new LegacyLibrary();
       var source = new PersonSource();
-      List<TourStop> stops = legacy.GetAllTourStops().Cast<TourStop>().ToList();
+			List<TourStop> stops = null;
+			
 
       List<Person> persons = null;
-      persons = source.GetAllCustomers().Cast<Person>().ToList();
-      persons = source.GetAllGuides().Cast<Person>().ToList();
+     
     }
 	}
 
