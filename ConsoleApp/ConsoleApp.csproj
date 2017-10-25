@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CodeExample.cs" />
-    <Compile Include="OldLibrary.cs" />
+    <Compile Include="LegacyLibrary.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="PersonSource.cs" />
     <Compile Include="Program.cs" />
