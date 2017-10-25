@@ -12,7 +12,24 @@ namespace WeeklyTips.ConsoleApp
 
     public void RunExample()
     {
-      var tour1 = new Tour();
+
+			
+      Tour tour1 = null;
+			
+			string tourName;
+			// this throws a null reference exception if tour1 is null
+			#region Check For null
+			if (tour1 == null)
+			{
+				return;
+			}
+			#endregion
+			tourName = tour1.TourName;
+
+			// this doesn't throw, instead it stores null in the tourName variable
+			tourName = tour1?.TourName;
+
+
       var tour2 = new Tour();
       var tour3 = new Tour();
       tour2.TourName = "Riverwalk at Night";
@@ -22,10 +39,9 @@ namespace WeeklyTips.ConsoleApp
       tour3.TourStops.Add(new TourStop { StopName = "Piccolo and Tuba band" });
       tour3.TourStops.Add(new TourStop { StopName = "Carnival songs with Aya" });
 
-      PrintStopName(null);
-      PrintStopName(tour1);
-      PrintStopName(tour2);
-      PrintStopName(tour3);
+			
+			PrintStopName3(tour2);
+			PrintStopName3(tour3);
       Console.ReadLine();
     }
 
@@ -84,7 +100,9 @@ namespace WeeklyTips.ConsoleApp
       {
 
         {
-          Console.WriteLine($"Tour: {tour?.TourName}, Stop:{tour?.TourStops?.FirstOrDefault()?.StopName}");
+					
+					//Console.WriteLine ($"Tour: {null}, Stop:{null}");
+					Console.WriteLine($"Tour: {tour?.TourName}, Stop:{tour?.TourStops?.FirstOrDefault()?.StopName}");
         }
 
 
