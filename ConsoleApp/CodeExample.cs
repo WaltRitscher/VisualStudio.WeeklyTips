@@ -17,11 +17,16 @@ namespace WeeklyTips.ConsoleApp {
 			 // guide =  person as Guide;
 
       var legacy = new LegacyLibrary();
-      var source = new PersonSource();
-			List<TourStop> stops = null;
-			
 
-      List<Person> persons = null;
+			//var q = from s in stops
+			//				orderby s.StopNumber
+			//				select s;
+
+			var source = new PersonSource();
+			List<TourStop> stops = null;
+
+	
+			List < Person > persons = null;
      
     }
 	}
