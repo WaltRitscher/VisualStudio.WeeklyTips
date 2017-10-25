@@ -15,9 +15,9 @@ namespace WeeklyTips.ConsoleApp
 
       Tour tour1 = null;
 			
-			string tourName = "Mid century modern architecture";
+			string tourName = "Mid century modern home tour";
 			// this throws a null reference exception if tour1 is null
-			#region Check For null
+			#region Check for null
 			if (tour1 == null)
 			{
 				return;
@@ -25,11 +25,13 @@ namespace WeeklyTips.ConsoleApp
 			#endregion
 			tourName = tour1.TourName;
 
+
 			// this doesn't throw, instead it stores null in the tourName variable
 			tourName = tour1?.TourName;
+			Console.WriteLine($"The tour is :{tourName} ");
+			Console.ReadLine();
 
-
-      var tour2 = new Tour();
+			var tour2 = new Tour();
       var tour3 = new Tour();
       tour2.TourName = "Riverwalk at Night";
 
