@@ -18,7 +18,7 @@ namespace WeeklyTips.ConsoleApp {
 
       var legacy = new LegacyLibrary();
 
-			//var q = from s in stops
+			//var q = from s in legacy.GetAllTourStops()
 			//				orderby s.StopNumber
 			//				select s;
 
