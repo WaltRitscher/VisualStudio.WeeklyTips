@@ -22,7 +22,12 @@ namespace WeeklyTips.ConsoleApp {
             if (markup > .5M
                     && wholesaleCost > 2000)
             {
-
+                if (((markup +2) % 10) == 0)
+                {
+                    {
+                        
+                    }
+                }
             }
         }
 
