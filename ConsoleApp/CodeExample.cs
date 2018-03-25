@@ -10,14 +10,28 @@ namespace WeeklyTips.ConsoleApp {
 	class CodeExample {
 
 		public void RunExample() {
-            // write the example code here...
-            Trace.WriteLine("==================="); 
-            Trace.WriteLine("Trace Ready...");
+            var wholesaleCost = 45.89M;
 
-            Trace.WriteLine("===================");
-            Trace.WriteLine("Debug Ready...");
+            Console.WriteLine(wholesaleCost);
+
+            var markup = .30M;
+            var retail = wholesaleCost *= markup;
+            var oddNumbers = new int[1, 3, 5, 7, 9];
+            var evenNumbers = new List<int>();
+
+            if (markup > .5M
+                    && wholesaleCost > 2000)
+            {
+
+            }
         }
-	}
+
+        public void AnotherExample()
+        {
+
+            
+        }
+    }
 
 
 }
