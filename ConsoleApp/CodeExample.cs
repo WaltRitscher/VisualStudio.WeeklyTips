@@ -14,8 +14,8 @@ namespace WeeklyTips.ConsoleApp {
             Trace.WriteLine("==================="); 
             Trace.WriteLine("Trace Ready...");
 
-            Trace.WriteLine("===================");
-            Trace.WriteLine("Debug Ready...");
+            Debug.WriteLine("===================");
+            Debug.WriteLine("Debug Ready...");
         }
 	}
 
