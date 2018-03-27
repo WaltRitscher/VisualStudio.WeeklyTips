@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace WeeklyTips.ConsoleApp
+{
+  internal class Program
+  {
+    private static void Main(string[] args)
+    {
+      // Run the example from the main method.
+      var example = new CodeExample();
 
-namespace WeeklyTips.ConsoleApp {
-	class Program {
-		static void Main(string[] args) {
-
-			// Run the example from the main method.
-			var example = new CodeExample();
-
-			example.RunExample();
-
-		}
-	}
+      example.RunExample();
+    }
+  }
 }

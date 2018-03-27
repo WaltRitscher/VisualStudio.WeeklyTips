@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CourseLib {
-  class Tariff {
-     //tariff
+﻿namespace CourseLib
+{
+  internal class Tariff
+  {
+    //tariff
   }
-
 }

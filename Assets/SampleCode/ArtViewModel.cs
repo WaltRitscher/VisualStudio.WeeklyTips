@@ -5,9 +5,8 @@ using System.Web;
 
 namespace Models
 {
-	public class ArtViewModel
-	{
-
-		public List<ArtProject> ArtProjects {get; set;}
-	}
+  public class ArtViewModel
+  {
+    public List<ArtProject> ArtProjects { get; set; }
+  }
 }
