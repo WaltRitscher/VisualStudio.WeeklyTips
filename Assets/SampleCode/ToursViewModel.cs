@@ -5,9 +5,8 @@ using System.Web;
 
 namespace Models
 {
-	public class ToursViewModel
-	{
-
-		public List<Tour> Tours { get; set; }
-	}
+  public class ToursViewModel
+  {
+    public List<Tour> Tours { get; set; }
+  }
 }
