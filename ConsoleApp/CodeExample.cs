@@ -22,18 +22,20 @@ namespace WeeklyTips.ConsoleApp
       areSame = evenNumbers == userSelectedNumbers;
       Console.WriteLine($"evenNumbers == userSelectedNumbers: {areSame}");
 
-      //areSame = evenNumbers.SequenceEqual(userSelectedNumbers);
-      //Console.WriteLine($"evenNumbers.SequenceEqual(userSelectedNumbers): {areSame}");
+			//areSame = evenNumbers.SequenceEqual(userSelectedNumbers);
+			//Console.WriteLine($"evenNumbers.SequenceEqual(userSelectedNumbers): {areSame}");
 
-      //areSame = evenNumbers.SequenceEqual(oddNumbers);
-      //Console.WriteLine($"evenNumbers.SequenceEqual(oddNumbers): {areSame}");
+			//areSame = evenNumbers.SequenceEqual(oddNumbers);
+			//Console.WriteLine($"evenNumbers.SequenceEqual(oddNumbers): {areSame}");
 
 
-      //// get the differences between two sequences
+			//// get the differences between two sequences
 
-      //List<int>  diff= numbers.Except(oddNumbers).ToList() ;
+			//List<int>  diff= numbers.Except(oddNumbers).ToList() ;
 
-      //diff.ForEach(x=>Console.WriteLine(x) );
+			//diff.ForEach(x=>Console.WriteLine(x) );
+
+			Console.ReadLine();
     }
   }
 }
