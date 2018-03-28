@@ -46,8 +46,9 @@ namespace WeeklyTips.ConsoleApp
 		}
 		public void CallAnotherMethod()
 		{
-
-			UpdatePrice(BookID: 12, newPrice: 65.00M);
+			var bookId = 12;
+			decimal updatedPrice = 65.00M;
+			UpdatePrice(bookId, updatedPrice);
 
 		}
 		private decimal CalculateBuyerDiscount(decimal currentPrice, BuyerType buyerType)
