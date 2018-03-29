@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 
-using System.Collections.Generic;
 namespace WeeklyTips.ConsoleApp
 {
 	internal class CodeExample
