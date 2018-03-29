@@ -58,10 +58,10 @@ namespace WeeklyTips.ConsoleApp
 			#endregion
 
 			var tourList1 = new List<Tour> {bikeTour, sailingTour };
-			var tourList2 = new List<Tour> { dupTour, sailingTour };
+			//var tourList2 = new List<Tour> { dupTour, sailingTour };
 
-			areSame = tourList1.SequenceEqual(tourList2);
-			Console.WriteLine($"tourList1.SequenceEqual(tourList2): {areSame}");
+			//areSame = tourList1.SequenceEqual(tourList2);
+			//Console.WriteLine($"tourList1.SequenceEqual(tourList2): {areSame}");
 			Console.ReadLine();
 		}
 	}
