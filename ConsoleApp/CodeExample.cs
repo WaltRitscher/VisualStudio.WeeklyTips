@@ -29,7 +29,12 @@ namespace WeeklyTips.ConsoleApp {
       }
 
       Console.WriteLine();
-      Console.WriteLine("FormatAsContiguous");
+			Console.WriteLine("Raw Data");
+			foreach (var item in someNumbers) {
+				Console.Write($"{item}, ");
+			}
+			Console.WriteLine();
+			Console.WriteLine("FormatAsContiguous");
       Console.WriteLine(someNumbers.FormatAsContiguous());
 
       Console.Read();
