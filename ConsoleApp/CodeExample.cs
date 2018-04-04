@@ -29,7 +29,7 @@ namespace WeeklyTips.ConsoleApp {
       }
 
       Console.WriteLine();
-      Console.WriteLine("GetRange");
+      Console.WriteLine("FormatAsContiguous");
       Console.WriteLine(someNumbers.FormatAsContiguous());
 
       Console.Read();
