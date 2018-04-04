@@ -1,68 +1,41 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Collections;
 
 using System.Collections.Generic;
-namespace WeeklyTips.ConsoleApp
-{
-	internal class CodeExample
-	{
-		public void RunExample()
-		{
-			// write the example code here...
-
-			// SequenceEquals returns true if both lists contain the same items.
-			var numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 15, 22 };
-			var evenNumbers = new List<int> { 2, 4, 6, 8 };
-			var oddNumbers = new List<int> { 1, 3, 5, 7, 9 };
-			var userSelectedNumbers = new List<int> { 2, 4, 6, 8 };
-
-			bool areSame;
-
-			areSame = evenNumbers == userSelectedNumbers;
-			Console.WriteLine($"evenNumbers == userSelectedNumbers: {areSame}");
-
-			//areSame = evenNumbers.SequenceEqual(userSelectedNumbers);
-			//Console.WriteLine($"evenNumbers.SequenceEqual(userSelectedNumbers): {areSame}");
-
-			//areSame = evenNumbers.SequenceEqual(oddNumbers);
-			//Console.WriteLine($"evenNumbers.SequenceEqual(oddNumbers): {areSame}");
+namespace WeeklyTips.ConsoleApp {
+  internal class CodeExample {
+    public void RunExample() {
+      // write the example code here...
 
 
-			//// get the differences between two sequences
+      var fives = new List<int> { 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 };
+      var someNumbers = new List<int> {11,12,13,14,20,22,34,35,36,37,55 };
 
-			//List<int>  diff= numbers.Except(oddNumbers).ToList() ;
+      var result1 = fives.GetRange(index:2, count:2);
+      var result2 = fives.IndexRange<int>(fromIndex: 3, toIndex: 6);
 
-			//diff.ForEach(x=>Console.WriteLine(x) );
+      Console.WriteLine();
+      Console.WriteLine  ("GetRange");
+      foreach (var item in result1) {
+        Console.WriteLine(item);
+      }
 
-			#region Create tours
-			var bikeTour = new Tour
-			{
-				TourName = "Bikes in Barcelona",
-				AvailableDays = Days.Monday,
-				AvailableMonths = Months.April
-			};
+      Console.WriteLine();
+      Console.WriteLine("IndexRange");
+      foreach (var item in result2) {
+        Console.WriteLine(item);
+      }
 
-			var dupTour = new Tour
-			{
-				TourName = "Bikes in Barcelona",
-				AvailableDays = Days.Monday,
-				AvailableMonths = Months.April
-			};
-			var sailingTour = new Tour
-			{
-				TourName = "Deserted Islands",
-				AvailableDays = Days.Saturday,
-				AvailableMonths = Months.August
-			};
-			#endregion
+      Console.WriteLine();
+      Console.WriteLine("GetRange");
+      Console.WriteLine(someNumbers.FormatAsContiguous());
 
-			var tourList1 = new List<Tour> {bikeTour, sailingTour };
-			var tourList2 = new List<Tour> { dupTour, sailingTour };
+      Console.Read();
 
-			areSame = tourList1.SequenceEqual(tourList2);
-			Console.WriteLine($"tourList1.SequenceEqual(tourList2): {areSame}");
-			Console.ReadLine();
-		}
-	}
+    }
+
+
+  }
 }
