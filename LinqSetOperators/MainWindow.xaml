@@ -6,9 +6,10 @@
         xmlns:local="clr-namespace:LinqSetOperators"
         mc:Ignorable="d"
         Title="MainWindow"
-        Height="700"
-        Width="900"
-        FontSize='18' WindowState='Maximized'>
+        Height="900"
+        Width="1400"
+        FontSize='18'
+        WindowState='Maximized'>
   <Window.Resources>
     <Style TargetType='Button'>
       <Setter Property='Padding'
@@ -31,13 +32,12 @@
       <ColumnDefinition Width='20' />
       <ColumnDefinition Width='300' />
       <ColumnDefinition Width='420' />
-     
+      <ColumnDefinition Width='250' />
       <ColumnDefinition Width='30' />
     </Grid.ColumnDefinitions>
     <StackPanel Grid.Column='1'
                 Grid.Row='1'>
-      <StackPanel 
-                  Margin='10'>
+      <StackPanel Margin='10'>
         <TextBlock Text='Set A' />
         <ListBox x:Name='SetAListBox'
                  ItemsSource='{Binding}'
@@ -149,9 +149,7 @@
                 Grid.Row='5'
                 VerticalAlignment='Bottom'
                 Margin='0,40,0,0'>
-      <StackPanel 
-                  Orientation='Horizontal'
-                 >
+      <StackPanel Orientation='Horizontal'>
         <Button Content='Union (A-B)'
                 x:Name='UnionButton'
                 Click='UnionButton_Click' />
@@ -190,11 +188,25 @@
                 Click='Cartesian4Button_Click' />
       </StackPanel>
     </StackPanel>
+
     <TextBlock x:Name='MessageTextBlock'
                Text='*'
                Grid.Row='4'
                Grid.Column='2'
                TextWrapping='Wrap'
                Margin='40,10,0,0' />
+
+    <Image Grid.Row='1'
+            Grid.Column='3'
+          
+            Margin='20,10,0,0'
+            Grid.RowSpan='4'
+           Grid.ColumnSpan='2'
+            Height='180'
+            Width='300'
+            VerticalAlignment='Top' x:Name='VennImage'
+           Source='Images/VennUnion.png'>
+    
+    </Image>
   </Grid>
 </Window>

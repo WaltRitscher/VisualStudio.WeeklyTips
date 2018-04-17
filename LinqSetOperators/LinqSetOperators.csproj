@@ -93,5 +93,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\VennCartesian.png" />
+    <Resource Include="Images\VennExcept.png" />
+    <Resource Include="Images\VennIntersection.png" />
+    <Resource Include="Images\VennUnion.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
