@@ -7,9 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\Co
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Assets", "Assets\Assets.shproj", "{CE99FD79-851F-426F-B50F-3921043CC971}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tip055-CartesianLINQ", "Tip055-CartesianLINQ", "{B01AD62C-1387-4717-9DE4-015B4B75D1FE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqSetOperators", "LinqSetOperators\LinqSetOperators.csproj", "{B6426D6C-19D5-4D7B-9D72-37A5A13D9447}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tip058-NamespaceAliases", "Tip058-NamespaceAliases", "{B01AD62C-1387-4717-9DE4-015B4B75D1FE}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -42,22 +40,6 @@ Global
 		{7F6E3C34-2327-4371-B273-81C73F6B43FD}.Release|x64.Build.0 = Release|Any CPU
 		{7F6E3C34-2327-4371-B273-81C73F6B43FD}.Release|x86.ActiveCfg = Release|Any CPU
 		{7F6E3C34-2327-4371-B273-81C73F6B43FD}.Release|x86.Build.0 = Release|Any CPU
-		{B6426D6C-19D5-4D7B-9D72-37A5A13D9447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B6426D6C-19D5-4D7B-9D72-37A5A13D9447}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B6426D6C-19D5-4D7B-9D72-37A5A13D9447}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{B6426D6C-19D5-4D7B-9D72-37A5A13D9447}.Debug|ARM.Build.0 = Debug|Any CPU
-		{B6426D6C-19D5-4D7B-9D72-37A5A13D9447}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{B6426D6C-19D5-4D7B-9D72-37A5A13D9447}.Debug|x64.Build.0 = Debug|Any CPU
-		{B6426D6C-19D5-4D7B-9D72-37A5A13D9447}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{B6426D6C-19D5-4D7B-9D72-37A5A13D9447}.Debug|x86.Build.0 = Debug|Any CPU
-		{B6426D6C-19D5-4D7B-9D72-37A5A13D9447}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B6426D6C-19D5-4D7B-9D72-37A5A13D9447}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B6426D6C-19D5-4D7B-9D72-37A5A13D9447}.Release|ARM.ActiveCfg = Release|Any CPU
-		{B6426D6C-19D5-4D7B-9D72-37A5A13D9447}.Release|ARM.Build.0 = Release|Any CPU
-		{B6426D6C-19D5-4D7B-9D72-37A5A13D9447}.Release|x64.ActiveCfg = Release|Any CPU
-		{B6426D6C-19D5-4D7B-9D72-37A5A13D9447}.Release|x64.Build.0 = Release|Any CPU
-		{B6426D6C-19D5-4D7B-9D72-37A5A13D9447}.Release|x86.ActiveCfg = Release|Any CPU
-		{B6426D6C-19D5-4D7B-9D72-37A5A13D9447}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
