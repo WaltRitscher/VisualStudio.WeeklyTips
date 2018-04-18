@@ -7,14 +7,10 @@ namespace WeeklyTips.ConsoleApp {
     public void RunExample() {
       // write the example code here...
 
-      var example = new CodeExample();
-      example.RunExample();
       var appVersion = new System.Version();
       var chipVersion = new WeeklyTips.HardwareChip.Version();
 
-
       // get the app version
-
       var major = appVersion.Major;
 
       // get the OS version
