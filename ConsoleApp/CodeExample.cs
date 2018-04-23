@@ -23,7 +23,7 @@ And the day but one,
 Yet the light of the bright world dies
 With the dying sun.";
 
-      Console.WriteLine(poem2);
+      // Console.WriteLine(poem2);
 
       #endregion
 
