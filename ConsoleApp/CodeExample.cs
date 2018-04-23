@@ -18,12 +18,12 @@ namespace WeeklyTips.ConsoleApp {
       #region verbatim string
        // use the @ symbol to create verbatim string, which means the string content contains line feeds characters.
       var poem2 =
-			 @"The night has a thousand eyes.
+@"The night has a thousand eyes.
 And the day but one,
 Yet the light of the bright world dies
 With the dying sun.";
 
-     // Console.WriteLine(poem2);
+      Console.WriteLine(poem2);
 
       #endregion
 
